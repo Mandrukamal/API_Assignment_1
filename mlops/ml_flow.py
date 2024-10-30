@@ -4,6 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+from sklearn.metrics import accuracy_score
 import mlflow
 import mlflow.sklearn
 
@@ -92,5 +93,5 @@ def student_performance_factors(file_path):
 
 # Run the pipeline
 if __name__ == "__main__":
-    file_path = "/Users/mkmac/Documents/API_assignment_1/data/StudentPerformanceFactors.csv"  # Update the path to your dataset
+    file_path = "data/ImputedStudentPerformanceFactors.csv"  # Update the path to your dataset
     student_performance_factors(file_path)

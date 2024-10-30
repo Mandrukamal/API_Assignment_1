@@ -9,7 +9,7 @@ import numpy as np
 @task
 def load_dataset():
     # Load the dataset from a local file path
-    file_path = "/Users/mkmac/Documents/API_assignment_1/data/StudentPerformanceFactors.csv"
+    file_path = "data/StudentPerformanceFactors.csv"
     return pd.read_csv(file_path)
 
 @task(log_prints=True)
@@ -33,7 +33,7 @@ def preprocess_data(df):
     # Impute missing values
     imputer = SimpleImputer(strategy='mean')
     df_imputed = pd.DataFrame(imputer.fit_transform(df), columns=df.columns)
-
+    df_imputed.to_csv('data/ImputedStudentPerformanceFactors.csv', index=False)
     return df_imputed
 
 @task
@@ -42,7 +42,7 @@ def perform_eda(df):
     plt.figure(figsize=(10, 6))
     sns.countplot(data=df, x='Exam_Score')
     plt.title('Distribution of Exam Scores')
-    plt.savefig('/Users/mkmac/Documents/API_assignment_1/output/exam_score_distribution.png')
+    plt.savefig('output/exam_score_distribution.png')
     plt.close()
     print("EDA completed and saved.")
 
