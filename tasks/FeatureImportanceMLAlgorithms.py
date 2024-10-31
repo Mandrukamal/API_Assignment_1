@@ -31,7 +31,6 @@ for i,v in enumerate(importance):
 	print('Feature: %0d, Score: %.5f' % (i,v))
 # plot feature importance
 plt.bar([x for x in range(len(importance))], importance)
-plt.show()
 
 # 2. Random Forest Feature Importance
 # After being fit, the model provides a feature_importances_ property that can be accessed to retrieve the relative importance scores for each input feature.
@@ -47,7 +46,6 @@ for i,v in enumerate(importance):
 	print('Feature: %0d, Score: %.5f' % (i,v))
 # plot feature importance
 plt.bar([x for x in range(len(importance))], importance)
-plt.show()
 
 # 3. Permutation Feature Importance - using KNN
 from sklearn.neighbors import KNeighborsClassifier
@@ -66,4 +64,3 @@ for i,v in enumerate(importance):
 	print('Feature: %0d, Score: %.5f' % (i,v))
 # plot feature importance
 plt.bar([x for x in range(len(importance))], importance)
-plt.show()

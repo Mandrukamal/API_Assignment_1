@@ -15,4 +15,3 @@ corr_matrix = df.corr()  # Compute the correlation matrix
 plt.figure(figsize=(10, 6))
 sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt=".2f", linewidths=0.5)
 plt.title("Correlation Heatmap of Student Performance Factors")
-plt.show()
