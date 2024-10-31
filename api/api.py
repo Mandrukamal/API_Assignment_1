@@ -33,9 +33,7 @@ print(response)
 # Check the response status
 if response.status_code != 200:
     print(f"Error: Received status code {response.status_code}")
+    print(f"connection is bot succesful {response.status_code}")
     print(f"Response content: {response.text}")
 else:
-    artifacts = response.json()
-    print(artifacts)
-    for artifact in artifacts:
-        print(artifact)
+    print("connection is succesful")

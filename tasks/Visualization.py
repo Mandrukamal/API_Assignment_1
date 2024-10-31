@@ -26,9 +26,9 @@ plt.savefig("/Users/mkmac/Documents/API_assignment_1/output/visualization_plots/
 #plt.title('3. Swarm Plot of Hours_Studied')
 #plt.savefig("/Users/mkmac/Documents/API_assignment_1/output/visualization_plots/swarmplot_hours_studied.png")
 
-sns.swarmplot(x=df['Attendance'])
-plt.title('4. Swarm Plot of Attendance')
-plt.savefig("/Users/mkmac/Documents/API_assignment_1/output/visualization_plots/swarmplot_attendance.png")
+#sns.swarmplot(x=df['Attendance'])
+#plt.title('4. Swarm Plot of Attendance')
+#plt.savefig("/Users/mkmac/Documents/API_assignment_1/output/visualization_plots/swarmplot_attendance.png")
 
 # 1.4 Histogram
 #plt.hist(df['Hours_Studied'])
@@ -41,9 +41,9 @@ plt.savefig("/Users/mkmac/Documents/API_assignment_1/output/visualization_plots/
 #plt.savefig("/Users/mkmac/Documents/API_assignment_1/output/visualization_plots/distplot_hours_studied.png")
 
 # 1.6 Countplot
-sns.countplot(df['Gender'])
-plt.title('7. Count Plot of Gender (Categorical)')
-plt.savefig("/Users/mkmac/Documents/API_assignment_1/output/visualization_plots/countplot_gender.png")
+#sns.countplot(df['Gender'])
+#plt.title('7. Count Plot of Gender (Categorical)')
+#plt.savefig("/Users/mkmac/Documents/API_assignment_1/output/visualization_plots/countplot_gender.png")
 
 # 2.1 Boxplot for Bivariate Analysis
 sns.boxplot(x=df['Exam_Score'], y=df['Attendance'], data=df)
@@ -65,14 +65,14 @@ plt.savefig("/Users/mkmac/Documents/API_assignment_1/output/visualization_plots/
 #plt.savefig("/Users/mkmac/Documents/API_assignment_1/output/visualization_plots/facetgrid_gender_extracurricular.png")
 
 # Multivariate Analysis - FacetGrid
-g = sns.FacetGrid(df, col="Extracurricular_Activities", hue="Gender", margin_titles=True, height=6.5, aspect=.85)
-g.map(sns.histplot, "Hours_Studied")
-plt.savefig("/Users/mkmac/Documents/API_assignment_1/output/visualization_plots/facetgrid_hours_studied_extracurricular.png")
+#g = sns.FacetGrid(df, col="Extracurricular_Activities", hue="Gender", margin_titles=True, height=6.5, aspect=.85)
+#g.map(sns.histplot, "Hours_Studied")
+#plt.savefig("/Users/mkmac/Documents/API_assignment_1/output/visualization_plots/facetgrid_hours_studied_extracurricular.png")
 
 # 2.4 lmplot
-#sns.lmplot(data=df, x="Hours_Studied", y="Extracurricular_Activities", hue="Gender")
-#plt.title('13. lmplot of Hours_Studied vs Extracurricular_Activities vs Gender')
-#plt.savefig("/Users/mkmac/Documents/API_assignment_1/output/visualization_plots/lmplot_hours_studied_extracurricular.png")
+sns.lmplot(data=df, x="Hours_Studied", y="Extracurricular_Activities", hue="Gender")
+plt.title('13. lmplot of Hours_Studied vs Extracurricular_Activities vs Gender')
+plt.savefig("/Users/mkmac/Documents/API_assignment_1/output/visualization_plots/lmplot_hours_studied_extracurricular.png")
 
 #sns.lmplot(data=df, x="Hours_Studied", y="Attendance", hue="Gender")
 #plt.title('14. lmplot of Hours_Studied vs Attendance vs Gender')
