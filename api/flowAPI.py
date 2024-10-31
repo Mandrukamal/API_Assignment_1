@@ -5,10 +5,10 @@
 import requests
 
 # Replace these variables with your actual Prefect Cloud credentials
-PREFECT_API_KEY = "cli-6775a16f-27ad-483f-b58d-8118642fc7d0"  # Your Prefect Cloud API key
-ACCOUNT_ID = "7537c1be-d2ed-476b-86f2-07e43aa776de"  # Your Prefect Cloud Account ID
-WORKSPACE_ID = "5d43022c-3f8c-45c4-9994-eaa56b807de8"  # Your Prefect Cloud Workspace ID
-FLOW_ID = "3d7e612f-b4fb-42e0-a722-a73a20737c76"  # Your Flow ID
+PREFECT_API_KEY = "pnu_eV1mrDrrHZhK36CsR5rAlYOnN1KqKO3smWqG"  # Your Prefect Cloud API key
+ACCOUNT_ID = "b31bc8d1-2034-4493-8b4c-bcfc65e5c985"  # Your Prefect Cloud Account ID
+WORKSPACE_ID = "479354b6-1ff7-41a6-a2fa-d03eb91e6375"  # Your Prefect Cloud Workspace ID
+FLOW_ID = "fee0b8ea-4107-411b-93d7-d024be07c700"  # Your Flow ID
 
 # Correct API URL to get flow details
 PREFECT_API_URL = f"https://api.prefect.cloud/api/accounts/{ACCOUNT_ID}/workspaces/{WORKSPACE_ID}/flows/{FLOW_ID}"
