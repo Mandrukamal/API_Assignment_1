@@ -33,7 +33,11 @@ def student_performance_factors():
     # Run tasks sequentially and capture the results
    data1 = run_task("BasicStats.py")
    data2 = run_task("Binning.py", wait_for=[data1])  
-   data3 = run_task("PearsonCorrelation.py", wait_for=[data2]) 
+   data3 = run_task("PearsonCorrelation.py", wait_for=[data2])
+   data4 = run_task("Encoding.py", wait_for=[data3]) 
+   data5 = run_task("CorrelationCoffecient.py", wait_for=[data4]) 
+   data6 = run_task("FeatureImportanceMLAlgorithms.py", wait_for=[data5])
+   data7 = run_task("Visualization.py", wait_for=[data6]) 
 
 # To run locally
 if __name__ == "__main__":

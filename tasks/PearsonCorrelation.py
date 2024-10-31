@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # Loading the dataset
-df = pd.read_csv("/Users/mkmac/Documents/API_assignment_1/data/StudentPerformanceFactors.csv")
+df = pd.read_csv("/Users/mkmac/Documents/API_assignment_1/data/ImputedStudentPerformanceFactors.csv")
 logger.info(f"\n{df.head()}")
 logger.info("Dataset loaded for Pearson correlation.")
 
