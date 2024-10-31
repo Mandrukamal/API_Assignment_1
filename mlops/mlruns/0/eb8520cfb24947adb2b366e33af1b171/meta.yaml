@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/eb8520cfb24947adb2b366e33af1b171/artifacts
+end_time: 1730309210606
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: eb8520cfb24947adb2b366e33af1b171
+run_name: enthused-newt-204
+run_uuid: eb8520cfb24947adb2b366e33af1b171
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730309207603
+status: 3
+tags: []
+user_id: mkmac

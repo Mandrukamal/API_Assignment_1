@@ -93,5 +93,5 @@ def student_performance_factors(file_path):
 
 # Run the pipeline
 if __name__ == "__main__":
-    file_path = "data/ImputedStudentPerformanceFactors.csv"  # Update the path to your dataset
+    file_path = "/Users/mkmac/Documents/API_assignment_1/data/ImputedStudentPerformanceFactors.csv"  # Update the path to your dataset
     student_performance_factors(file_path)
